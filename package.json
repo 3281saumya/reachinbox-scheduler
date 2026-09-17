@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "prisma": "^6.19.0"
+  },
+  "dependencies": {
+    "@bull-board/api": "^9.10.1",
+    "@bull-board/express": "^9.10.1",
+    "@prisma/client": "^6.19.0"
+  }
+}

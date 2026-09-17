@@ -1,0 +1,22 @@
+# Terminal Environment Changes
+
+## Extension: GitHub.copilot-chat
+
+Enables use of `copilot-debug` and `copilot` commands in the terminal
+
+- `COPILOT_DEBUG_NONCE=9ef15fc398898d39f8847746c21b2493`
+- `PATH=c:\Users\Saumya\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Saumya\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;${env:PATH}`
+
+## Extension: Anthropic.claude-code
+
+- `CLAUDE_CODE_SSE_PORT=14956`
+
+## Extension: vscode.git
+
+Enables the following features: git auth provider
+
+- `GIT_ASKPASS=c:\Users\Saumya\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass.sh`
+- `VSCODE_GIT_ASKPASS_NODE=C:\Users\Saumya\AppData\Local\Programs\Microsoft VS Code\Code.exe`
+- `VSCODE_GIT_ASKPASS_EXTRA_ARGS=`
+- `VSCODE_GIT_ASKPASS_MAIN=c:\Users\Saumya\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass-main.js`
+- `VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-ec81e7fd84-sock`

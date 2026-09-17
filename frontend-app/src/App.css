@@ -1,0 +1,311 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  background: #1e293b;
+  color: white;
+  padding: 28px 8%;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 8px 0 0;
+  color: #cbd5e1;
+}
+
+.header-row,
+.dashboard-actions,
+.user-panel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-row {
+  justify-content: space-between;
+}
+
+.user-panel img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.dashboard-actions input {
+  min-width: 220px;
+  padding: 9px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.search-results {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.search-results div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #e0f2fe;
+  border-radius: 6px;
+}
+
+@media (max-width: 700px) {
+  .header-row,
+  .dashboard-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .dashboard-actions input {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+main {
+  padding: 35px 8%;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.upload-section {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+.upload-section form {
+  display: grid;
+  gap: 10px;
+  max-width: 600px;
+}
+
+.upload-section label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.upload-section input,
+.upload-section textarea {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font: inherit;
+  width: 100%;
+}
+
+.upload-section textarea {
+  resize: vertical;
+}
+
+.upload-section button {
+  margin-top: 12px;
+  width: fit-content;
+}
+
+.campaign-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+  gap: 20px;
+}
+
+.campaign-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+.campaign-card h3 {
+  margin-top: 0;
+  overflow-wrap: anywhere;
+}
+
+.campaign-card button {
+  margin-top: 10px;
+}
+
+.details-header {
+  background: white;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(140px, 1fr)
+  );
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+.stat-card h3 {
+  margin: 0;
+}
+
+.stat-card p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.stat-card.sent p {
+  color: #16a34a;
+}
+
+.stat-card.pending p {
+  color: #ca8a04;
+}
+
+.stat-card.processing p {
+  color: #2563eb;
+}
+
+.stat-card.failed p {
+  color: #dc2626;
+}
+
+.recipient-list {
+  display: grid;
+  gap: 15px;
+}
+
+.recipient-card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+.recipient-card p {
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.running {
+  color: #2563eb;
+}
+
+.status.scheduled {
+  color: #ca8a04;
+}
+
+.status.completed {
+  color: #16a34a;
+}
+
+.status.failed {
+  color: #dc2626;
+}
+
+.status.sent {
+  color: #16a34a;
+}
+
+.status.pending {
+  color: #ca8a04;
+}
+
+.status.processing {
+  color: #2563eb;
+}
+
+.success {
+  color: #16a34a;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 25px 5%;
+  }
+
+  header {
+    padding: 25px 5%;
+  }
+
+  .dashboard-header {
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
